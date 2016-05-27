@@ -1,0 +1,142 @@
+\documentclass[12pt,english,twoside]{report}
+\usepackage{mathptmx}
+\renewcommand{\familydefault}{\rmdefault}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage[a4paper]{geometry}
+\setcounter{secnumdepth}{2} % Changed from 3 to 2. 0-chapter 1-section 2-subsection 
+\setcounter{tocdepth}{2} % Changed from 3 to 2. 0-chapter 1-section 2-subsection 
+\setlength{\parskip}{\medskipamount}
+\setlength{\parindent}{0pt}
+\usepackage{verbatim}
+\usepackage{pdfpages}
+\usepackage{graphicx}
+\usepackage{subfig} %% This package has to be here
+
+%Packages Added By George
+\usepackage{setspace}
+\usepackage{arabtex}
+\usepackage[numbers]{natbib}
+\usepackage{nomencl}
+\usepackage{paralist}
+\usepackage[linesnumbered]{algorithm2e}
+\usepackage{color}
+\usepackage{amsthm}
+\usepackage[cmex10]{amsmath}
+\usepackage{bbold}
+\usepackage{multirow}
+\usepackage{dsfont}
+\usepackage{booktabs}
+\usepackage{eufrak}
+\usepackage{amssymb}
+
+% Theorem Styles
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+% Definition Styles
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{example}{Example}[section]
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+\usepackage{etoolbox}
+\newtoggle{edit-mode}
+\togglefalse{edit-mode}  
+%\toggletrue{edit-mode}
+
+% the following is useful when we have the old nomencl.sty package
+\providecommand{\printnomenclature}{\printglossary}
+\providecommand{\makenomenclature}{\makeglossary}
+\makenomenclature
+\doublespacing
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{tauthesis}
+\iftoggle{edit-mode}{
+\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=6cm,headheight=1cm,headsep=1cm,footskip=1cm, marginparwidth=5cm}
+}
+
+\usepackage[font={small,bf}, labelfont={small,bf}, margin=1cm]{caption}
+\usepackage{titlesec}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp}{0pt}{\Huge\bfseries}
+
+\University{Tel Aviv University}
+\Faculty{The Iby and Aladar Fleischman Faculty of Engineering}
+\School{The Zandman-Slaner School of Graduate Studies}
+\Department {Department of Electrical Engineering - Systems}
+\Title{\textbf{ \uppercase {Thesis Title}}}
+\Degree{Master of Science in Electrical and Electronic Engineering}
+\Author{Your name}
+\Year{September 2014}
+\Supervisor{Prof. first supervisor}
+\SecondSupervisor{Dr. second Supervisor}
+
+\makeatother
+
+\usepackage{babel}
+
+
+\begin{document}
+
+
+\pagenumbering{gobble}
+
+\titlepage
+
+\secondtitlepage
+
+\dedication{\textbf{\emph{To my whomever, \\
+for being whatever}}}
+
+\include{acknowledge}
+
+\cleardoublepage
+\pagenumbering{roman}
+\setcounter{page}{1} % Start preliminary pages numbering (roman numerals).
+
+\include{abstract}
+
+\tableofcontents{}
+
+\cleardoublepage
+
+\addcontentsline{toc}{chapter}{Nomenclature}
+
+\printnomenclature
+
+\cleardoublepage
+
+\listoffigures
+
+\cleardoublepage
+
+\listoftables
+
+\textpages
+
+\include{introduction}
+
+\include{chapter}
+
+\include{conclusions}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\appendix
+
+\include{appendix}
+
+\cleardoublepage
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+\includepdf[pages=-]{hebrew_part}
+\end{document}
