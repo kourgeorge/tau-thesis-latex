@@ -1,10 +1,10 @@
 # Thesis template for Tel-Aviv University
 A thesis latex formatted according the requirement in the Tel-Aviv University at the faculty of engineering.
 
-This project is based on a template by **Alex Liberzon** that can be found in [here](https://www.overleaf.com/latex/templates/master-or-ph-dot-d-thesis-template-for-tel-aviv-university-graduate-students/cknggfrwkmmg#.V0gv0Pl974Z).
-Compared to Liberzon's version, this version contains enhancements and new features including:
+This project is based on a template by **Alex Liberzon** that can be found in [here](https://github.com/alexlib/tau_thesis_lyx_template).
+Compared to Liberzon's original template, this version contains enhancements and new features including:
 
-1. Adherence to the engineering department requirements.
+1. Adherence to the engineering department updated requirements.
 2. A facelift for the title page
 3. Nomenclature support
 4. Beautiful dedication page
@@ -12,6 +12,7 @@ Compared to Liberzon's version, this version contains enhancements and new featu
 5. Definition and Theorem style
 6. First and second supervisor
 7. With minimal changes it can be used for as Ph.D dissertation template
+8. Bare Latex - LyX free.
 
 We have made an effort to include an example for every possible type of element needed in an engineerig thesis (table, figure, nomenclatures, numbering, theorem, definition, etc).
 
