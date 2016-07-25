@@ -13,4 +13,16 @@ Compared to Liberzon's version, this version contains correctiond and new feture
 6. First and second supervisor.
 7. With minimal channges it can be used for as Ph.D dissertation template.
 
+
+Some uage notes:
+
+1. The "main" file is the **Thesis-main.tex**.
+2. Your personal information, date, supervisor can be configured in the main file.
+3. every chapter should be written in a different tex file.
+4. The main file describes the content order starting from "\begin{document}"
+5. The main file defies all needed keywords - feel free to remove unneeded definitions.
+5. Bibliography should be added in **references.bib**.
+
 For help you can contact the author at: kourgeorge/at/gmail.com.
+
+You can use, redistribute and do whatever with this project, however, the author takes no responsibility on any of your usage or action.
