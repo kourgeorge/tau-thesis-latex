@@ -1,6 +1,8 @@
 # Thesis template for Tel-Aviv University
 A thesis latex formatted according the requirement in the Tel-Aviv University at the faculty of engineering.
+
 Here is a link to the example pdf [Thesis-main.pdf](Thesis-main.pdf).
+A link to online automatic build system: [latexonline.cc](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2Fkourgeorge%2Ftau-thesis-latex&target=Thesis-main.tex&command=pdflatex&trackId=1550154999186)
 
 This project is based on a template by **Alex Liberzon** (@alexlib) that can be found in [here](https://github.com/alexlib/tau_thesis_lyx_template).
 Compared to Liberzon's original template, this version contains enhancements and new features including:
