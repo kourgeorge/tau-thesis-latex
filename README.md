@@ -24,8 +24,8 @@ We have made an effort to include an example for every possible type of element 
 2. **acknowledge.tex** - the acknowledge part.
 3. **abstract.tex** - the abstract part.
 4. **introduction** - the introduction section (another chapter).
-4. **chapter.tex** - a chapter template.
-5. **conclusions.tex** - another chapter.
+4. **chapter1.tex** - a chapter template.
+5. **chapter2.tex** - another chapter template.
 6. **references.tex** - the bibliography source file.
 7. **hebrew_part.docx** - an MS Word document containing the hebrew title and abstract parts.
 8. **hebrew_part.pdf** - the "hebrew_part.docx" exported to pdf.
